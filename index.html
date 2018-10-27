@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Mortal Kombat - DJ Freshy Edition</title>
+  <!--Viewport-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--Reset-->
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <!--Bootstrap CSS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Custom CSS-->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+  <header>
+    <!-- <img src="assets/images/mortal_kombat_banner.jpg"> -->
+  </header>
+  <div class="container" id="main-game-section">
+    <div class="container col-lg-12" id="characters-section">
+      <div class="container section-title">Select Your Character</div>
+    </div>
+    <div class="container col-lg-4" id="selected-character-section">
+      <div class="section-title container"></div>
+      <div id="selected-character"></div>
+    </div>
+     <div class="section-title container col-lg-4">Fight Section
+    	<div id="fight-section">
+      		<button class="btn" id="attack-button">Attack</button>
+      		<div class="jumbotron" id="gameMessage"></div>
+    	</div>   
+    </div>	
+    <div id="action">
+      <div class="character-section">
+        <div class="container section-title col-lg-3">
+        	<div id="defender"></div>
+        </div>	
+      </div>
+    </div>    
+    <div class="container" id="available-to-attack-section">
+      <div class="section-title"></div>
+    </div>
+
+
+  </div>
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <!-- Latest compiled and minified JavaScript for bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <!-- My Javascript -->
+  <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+
+</html>
