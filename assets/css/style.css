@@ -2,8 +2,7 @@
 /* Body and background */
 /*---------------------*/
 body {
-    background-color: #000;
-    font-family: 'Montserrat', sans-serif;
+    background: url('../images/maxresdefault.jpg') fixed center;
   }
   header {
     font-size: 50px;
@@ -33,10 +32,15 @@ body {
   /* Character rendering */
   /*---------------------*/
   .character {
-    width: 153px;
-    margin: 0px 40px 0px 40px;
+    width: 190px;
+    margin: 15px 11px 0px 15px;
     cursor: pointer;
-    display: inline-block;
+    color: red;
+    border: solid 3px;
+    float: left;
+  }
+  .character:hover {
+  background: ghostwhite;
   }
   .character img {
     border: 0 none;
@@ -51,9 +55,11 @@ body {
     line-height: 30px;
     font-family: 'Itim', cursive;
     font-size: 20px;
+    background: #000;
   }
   .character-health {
     text-align: center;
+    background: #000;
   }
   
   /*---------------------*/

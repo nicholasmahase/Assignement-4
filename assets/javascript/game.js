@@ -18,14 +18,7 @@ $(document).ready(function() {
             imageUrl: "assets/images/shao_khan.png",
             enemyAttackBack: 20
         }, 
-        'Blaze': {
-            name: 'Blaze',
-            health: 95,
-            attack: 14,
-            imageUrl: "assets/images/blaze.png",
-            enemyAttackBack: 20
-        }, 
-        'Goro': {
+          'Goro': {
             name: 'Goro',
             health: 100,
             attack: 8,
@@ -146,9 +139,9 @@ $(document).ready(function() {
         //Capitalizes the first letter in characters name
         // $('.character').css('textTransform', 'capitalize');
         // conditional render
-        if (makeChar == 'enemy') {
+        if (makeChar === 'enemy') {
           $(charDiv).addClass('enemy');
-        } else if (makeChar == 'defender') {
+        } else if (makeChar === 'defender') {
           currDefender = character;
           $(charDiv).addClass('target-enemy');
         }
@@ -160,14 +153,14 @@ $(document).ready(function() {
         var newMessage = $("<div>").text(message);
         gameMesageSet.append(newMessage);
     
-        if (message == 'clearMessage') {
+        if (message === 'clearMessage') {
           gameMesageSet.text('');
         }
       };
     
       var renderCharacters = function(charObj, areaRender) {
         //render all characters
-        if (areaRender == '#characters-section') {
+        if (areaRender === '#characters-section') {
           $(areaRender).empty();
           for (var key in charObj) {
             if (charObj.hasOwnProperty(key)) {
@@ -226,7 +219,7 @@ $(document).ready(function() {
         //render defeated enemy
         if (areaRender == 'enemyDefeated') {
           $('#defender').empty();
-          var gameStateMessage = "You have defated " + charObj.name + ", you can choose to fight another enemy.";
+          var gameStateMessage = "You have defeated " + charObj.name + ", you can choose to fight another enemy.";
           renderMessage(gameStateMessage);
           blaster.play();
         }
@@ -253,7 +246,7 @@ $(document).ready(function() {
       // ----------------------------------------------------------------
       // Create functions to enable actions between objects.
       $("#attack-button").on("click", function() {
-        //if defernder area has enemy
+        //if defender area has enemy
         if ($('#defender').children().length !== 0) {
           //defender state change
           var attackMessage = "You attacked " + currDefender.name + " for " + (currSelectedCharacter.attack * turnCounter) + " damage.";
