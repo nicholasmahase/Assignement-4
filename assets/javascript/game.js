@@ -2,7 +2,6 @@
 $(document).ready(function() {
 
     //audio clips
-    var audio = new Audio('assets/audio/imperial_march.mp3');
     var hitSound = new Audio('assets/mortal kombat audio/hitsounds/mk1-00048.mp3');
     var quack = new Audio('assets/mortal kombat audio/unused/mk1-quack.mp3');
     var cheer = new Audio('assets/mortal kombat audio/arenas/mk1-00321.mp3');
